@@ -3,37 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>コメントセクション</title>
+  <title>コメントセクション テスト</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
     ytm-comments-entry-point-header-renderer {
       display: block;
       padding: 16px;
-      background-color: #f9f9f9;
-      border-bottom: 1px solid #ddd;
-      font-family: Arial, sans-serif;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
 
-    ytm-comments-entry-point-header-renderer.modern-styling .header {
+    ytm-comments-entry-point-header-renderer .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    ytm-comments-entry-point-header-renderer.modern-styling .header h2 {
+    ytm-comments-entry-point-header-renderer .header h2 {
       margin: 0;
       font-size: 18px;
       color: #333;
     }
 
-    ytm-comments-entry-point-header-renderer.modern-styling .header span {
+    ytm-comments-entry-point-header-renderer .header span {
       font-size: 14px;
-      color: #666;
+      color: #888;
     }
   </style>
 </head>
 <body>
+
+  <h1>動画タイトル</h1>
+  <p>ここに動画の説明文が入ります。</p>
+
   <ytm-comments-entry-point-header-renderer class="modern-styling">
-	 これが中身
+    <div class="header">
+      <h2>コメント</h2>
+      <span>123件</span>
+    </div>
   </ytm-comments-entry-point-header-renderer>
+
 </body>
 </html>
